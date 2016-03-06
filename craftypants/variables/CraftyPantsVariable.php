@@ -5,11 +5,13 @@ class CraftyPantsVariable
 {
     public function getCrafty()
     {
-        // Return crafty level
+        $craftyLevel = craft()->config->get('craftyLevel', 'craftypants');
+        return $craftyLevel;
     }
 
     public function getPants()
     {
-        // Return pants level
+        $pantsLevel = craft()->config->get('pantsLevel', 'craftypants');
+        return $pantsLevel;
     }
 }
