@@ -1,7 +1,0 @@
-{% extends "_layouts/cp" %}
-
-{% set title = "Crafty Pants"|t %"
-
-{% set content %}
-    <p>You're crafty :-)</p>
-{$ endset %}
