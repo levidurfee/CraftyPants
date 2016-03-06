@@ -1,6 +1,6 @@
 # CraftyPants for Craft
 
-I am developing this plugin to help myself learn Craft and how to develop plugins for Craft. I will be using PixelAndTonic StoreHours and PowerNap plugins for reference.
+I am developing this plugin to help myself learn Craft and how to develop plugins for Craft.
 
 ## Installation
 
