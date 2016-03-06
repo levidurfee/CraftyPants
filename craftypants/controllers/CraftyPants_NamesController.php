@@ -3,6 +3,9 @@ namespace Craft;
 
 class CraftyPants_NamesController extends BaseController
 {
+
+    protected $allowAnonymous = true;
+
     public function addName()
     {
         $this->requirePostRequest();
@@ -12,5 +15,6 @@ class CraftyPants_NamesController extends BaseController
         $name = $_POST['name'];
 
         craft()->craftyPants_levels->addName($name);
+        $this->redirectToPostedUrl();
     }
 }
