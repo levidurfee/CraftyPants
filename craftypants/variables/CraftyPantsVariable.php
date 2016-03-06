@@ -21,4 +21,10 @@ class CraftyPantsVariable
         $q->insert('craftypants_levels', array('name' => 'levi', 'level' =>  1));
         return 'getting levi!!! plz hold...';
     }
+
+    public function getTest()
+    {
+        $data = craft()->CraftyPants->getLevels();
+        return $data;
+    }
 }
