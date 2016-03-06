@@ -1,7 +1,7 @@
 <?php
 namespace Craft;
 
-class CraftyPants_NamesController extends Base Controller
+class CraftyPants_NamesController extends BaseController
 {
     public function addName()
     {
