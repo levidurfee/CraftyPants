@@ -24,7 +24,7 @@ class CraftyPantsVariable
 
     public function getTest()
     {
-        $data = craft()->CraftyPants->getLevels();
+        $data = craft()->craftypants_levels->getLevels();
         return $data;
     }
 }
