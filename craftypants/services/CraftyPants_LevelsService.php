@@ -8,4 +8,10 @@ class CraftyPants_LevelsService extends BaseApplicationComponent
         $q = craft()->db->createCommand();
         return $q->from('craftypants_levels')->where(array('name' => $name))->queryAll();
     }
+
+    public function addName($name)
+    {
+        $q = craft()->db->createCommand();
+        $q->insert('craftypants_levels', array('name' => $name, 'level' => 2));
+    }
 }
