@@ -22,4 +22,12 @@ class CraftyPantsPlugin extends BasePlugin
     {
         return 'https://6c657669.info';
     }
+
+    protected function defineSettings()
+    {
+        return array(
+            'craftyLevel' => array(AttributeType::Int, 'default' => array(5)),
+            'pantsLevel'  => array(AttributeType::Int, 'default' => array(5)),
+        );
+    }
 }
