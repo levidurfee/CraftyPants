@@ -11,6 +11,6 @@ class CraftyPants_NamesController extends Base Controller
         // i'll try the normal way
         $name = $_POST['name'];
 
-        craft()->craftyPants_levels->addName($name); 
+        craft()->craftyPants_levels->addName($name);
     }
 }
