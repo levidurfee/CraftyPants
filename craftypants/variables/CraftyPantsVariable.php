@@ -22,6 +22,12 @@ class CraftyPantsVariable
         return 'getting levi!!! plz hold...';
     }
 
+    public function getAll()
+    {
+        $data = craft()->craftyPants_levels->getAll();
+        return $data;
+    }
+
     public function getTest()
     {
         $data = craft()->craftyPants_levels->getLevels();
