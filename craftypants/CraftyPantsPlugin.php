@@ -30,4 +30,11 @@ class CraftyPantsPlugin extends BasePlugin
             'pantsLevel'  => array(AttributeType::Int, 'default' => array(5)),
         );
     }
+
+    public function getSettingsHtml()
+    {
+       return craft()->templates->render('craftypants/settings', array(
+           'settings' => $this->getSettings()
+       ));
+   }
 }
