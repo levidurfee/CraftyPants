@@ -10,7 +10,29 @@ To install CraftyPants
 2. Login to Craft
 3. Settings > Plugins from your Craft control panel and enable the CraftyPants plugin
 
+## Usage
+
+```php
+<form method="POST" action="" accept-charset="UTF-8">
+    <input type="hidden" name="action" value="craftyPants/names/addNewName">
+    <input type="hidden" name="redirect" value="/">
+    <input type="text" name="name">
+    <input type="submit" class="btn submit" value="{{ 'Submit'|t }}">
+</form>
+<ul>
+    {% for levels in craft.CraftyPants.getAll() %}
+    <li>{{ levels.name }}</li>
+    {% endfor %}
+</ul>
+```
+
 ## Changelog
+
+### 0.2.0
+
+- form submission is working
+- writing / reading to the database
+- reading a config file
 
 ### 0.1.0
 
