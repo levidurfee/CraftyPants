@@ -26,8 +26,8 @@ class CraftyPantsPlugin extends BasePlugin
     protected function defineSettings()
     {
         return array(
-            'craftyLevel' => array(AttributeType::Int, 'default' => array(5)),
-            'pantsLevel'  => array(AttributeType::Int, 'default' => array(5)),
+            'craftyLevel' => array(AttributeType::Number, 'default' => array(5)),
+            'pantsLevel'  => array(AttributeType::Number, 'default' => array(5)),
         );
     }
 
