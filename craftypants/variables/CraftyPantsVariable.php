@@ -14,4 +14,9 @@ class CraftyPantsVariable
         $pantsLevel = craft()->config->get('pantsLevel', 'craftypants');
         return $pantsLevel;
     }
+
+    public function getLevi()
+    {
+        return 'getting levi!!! plz hold...';
+    }
 }
