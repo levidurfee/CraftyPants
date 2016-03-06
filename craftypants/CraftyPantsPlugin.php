@@ -1,5 +1,5 @@
 <?php
-namespace levidurfee;
+namespace Craft;
 
 class CraftyPantsPlugin extends BasePlugin
 {
