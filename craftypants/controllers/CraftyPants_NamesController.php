@@ -10,11 +10,17 @@ class CraftyPants_NamesController extends BaseController
     {
         $this->requirePostRequest();
 
-        // not sure how i get the post variable
-        // i'll try the normal way
         $name = $_POST['name'];
 
-        craft()->craftyPants_levels->addName($name);
+        // not Craft coding standards, but eh.
+        if(isset($_POST['level']))
+        {
+            $level = $_POST['level'];
+        } else {
+            $level = 1;
+        }
+
+        craft()->craftyPants_levels->addName($name, $level);
         $this->redirectToPostedUrl();
     }
 }
