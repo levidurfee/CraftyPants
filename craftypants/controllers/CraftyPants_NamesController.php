@@ -6,7 +6,7 @@ class CraftyPants_NamesController extends BaseController
 
     protected $allowAnonymous = true;
 
-    public function addNewName()
+    public function actionAddNewName()
     {
         $this->requirePostRequest();
 
