@@ -21,7 +21,7 @@ To install CraftyPants
 </form>
 <ul>
     {% for levels in craft.CraftyPants.getAll() %}
-    <li>{{ levels.name }}</li>
+    <li>{{ levels.name }} [{{ levels.level }}]</li>
     {% endfor %}
 </ul>
 ```
