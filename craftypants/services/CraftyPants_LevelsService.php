@@ -18,6 +18,6 @@ class CraftyPants_LevelsService extends BaseApplicationComponent
     public function getAll()
     {
         $q = craft()->db->createCommand();
-        return $q->from('craftypants_levels')->order('id')->limit(10)->queryAll();
+        return $q->from('craftypants_levels')->order('id DESC')->limit(10)->queryAll();
     }
 }
