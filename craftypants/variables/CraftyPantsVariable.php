@@ -17,6 +17,8 @@ class CraftyPantsVariable
 
     public function getLevi()
     {
+        $q = craft()->db->createCommand();
+        $q->insert('craftypants_levels', array('name' => 'levi', 'level' =>  1));
         return 'getting levi!!! plz hold...';
     }
 }
