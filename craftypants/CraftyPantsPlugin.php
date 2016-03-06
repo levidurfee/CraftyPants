@@ -37,4 +37,9 @@ class CraftyPantsPlugin extends BasePlugin
            'settings' => $this->getSettings()
        ));
    }
+
+    public function getReleaseUrl()
+    {
+        return 'https://raw.githubusercontent.com/levidurfee/CraftyPants/master/releases.json';
+    }
 }
